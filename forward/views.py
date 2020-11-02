@@ -244,7 +244,7 @@ def pdfdownload(request, *args, **kwargs):
     #response = HttpResponse(pdf.read())
      if request.method == 'POST':
         #response['Content-Disposition'] = 'attachment;filename=file.pdf'
-        with open('Static/PDF/Manhattan 5LBs.pdf', 'rb') as pdf:
+        with open('./static/PDF/Manhattan 5LBs.pdf', 'rb') as pdf:
             if pdf:
                 response = HttpResponse(pdf.read(), content_type='application/pdf')
                 filename = " Manhattan_5LBs" 
@@ -378,7 +378,7 @@ def Gremock3(request, *args, **kwargs):
 def Answer_gremock3(request, *args, **kwargs):
     #if request.method == 'POST':
         #response['Content-Disposition'] = 'attachment;filename=file.pdf'
-        with open('Static/18.pdf', 'rb') as pdf:
+        with open('./static/18.pdf', 'rb') as pdf:
             if pdf:
                 response = HttpResponse(pdf.read(), content_type='application/pdf')
                 filename = " Answerkey_Mocktest3" 
@@ -393,7 +393,7 @@ def Answer_gremock3(request, *args, **kwargs):
 def Gremock4(request, *args, **kwargs):
     #if request.method == 'POST':
         #response['Content-Disposition'] = 'attachment;filename=file.pdf'
-        with open('Static/PDF/GRE_Practice_Test_02.pdf', 'rb') as pdf:
+        with open('./static/PDF/GRE_Practice_Test_02.pdf', 'rb') as pdf:
             if pdf:
                 response = HttpResponse(pdf.read(), content_type='application/pdf')
                 filename = " Mock_test4" 
@@ -408,7 +408,7 @@ def Gremock4(request, *args, **kwargs):
 def Answer_gremock4(request, *args, **kwargs):
     #if request.method == 'POST':
         #response['Content-Disposition'] = 'attachment;filename=file.pdf'
-        with open('Static/20.pdf', 'rb') as pdf:
+        with open('./static/20.pdf', 'rb') as pdf:
             if pdf:
                 response = HttpResponse(pdf.read(), content_type='application/pdf')
                 filename = " Answerkey_Mocktest4" 
