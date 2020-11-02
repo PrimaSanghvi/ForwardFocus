@@ -237,7 +237,7 @@ def profile_result(request):
 
 def gre_resources(request):
 
-    return render(request, 'test.html')
+    return render(request, 'main_resources.html')
 
 
 def pdfdownload(request, *args, **kwargs):
@@ -833,7 +833,7 @@ def UniversityList(request):
         df = pd.DataFrame(list(zip(l1, l2, l3, l4, l5, l6)))
         df.columns = ['GRE_Score', 'TOEFL_Score', 'SOP', 'LOR', 'CGPA', 'Research']
         print(df)
-        mdl = joblib.load('C:/Users/ADMIN/Desktop/Career_Guidance_System-master/Career_Guidance_System-master/load_model.pkl')
+        mdl = joblib.load('./load_model.pkl')
         ratings = mdl.predict(df)
         print(ratings)
 
