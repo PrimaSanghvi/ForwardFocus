@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'forwardfocus.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('Forwardfocus'),
-        'USER': os.environ.get('postgres'),
-        'PASSWORD': os.environ.get('Primasanghvi123'),
-        'HOST': os.environ.get('localhost'),
+        'NAME': 'forwardfocus',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',
         'PORT': '5432'
     }
 }
